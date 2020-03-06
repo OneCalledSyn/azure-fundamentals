@@ -1,0 +1,71 @@
+Azure Fundamentals
+
+Introduction to Cloud Computing
+
+-Cloud computing removes the hassle of managing hardware and software in delivering an application to users
+	-Flexible and cost efficient
+-Rent resources from another company and only pay for what you use
+-Typical computing services:
+	-Compute power - such as Linux servers or web applications
+	-Storage - such as files and databases
+	-Networking - such as secure connections between the cloud provider and your company
+	-Analytics - such as visualizing telemetry and performance data
+-Choose how work should be done to fit need
+	-Virtual machine: emulation of an actual computer with hardware and OS, gives more responsibility/control over maintainance
+		-Cloud provider would run the physical machine at their datacenter
+	-Container: provide a consistent, isolated execution environment for applications
+		-Similar to VM but no OS, app and its dependencies are all bundled up
+	-Serverless computing: app is broken into functions that run when triggered by some action (fastest to deploy)
+		-Only pay for the processing time used by each function as it executes
+Storage: Applications typically either "read" or "write" data and it should be stored somewhere
+		-File on disk, database, etc.
+Benefits: 
+-Cost effective: consumption-based pricing, no infrastructure costs
+-Scalable: vertical scaling (add resources to existing server like memory or CPUs), horizontal scaling (add more servers)
+-Elasticity: Automatically add-subtract resources based on demand
+-Current: Cloud provider takes care of updating all the hardware and software
+-Global: Datacenters worldwide can give a local presence with fast response to customers no matter where they are located
+-Secure: Physical security handled by cloud provider, digital security tools offered by cloud provider as well
+
+Compliance terms and requirements
+
+Compliance offerings:
+-Criminal Justice Information Services: Azure only major cloud provider to adhere to CJIS security policy
+-Cloud Security Alliance STAR certification: based on ISO 27001 and CCM (Cloud Controls Matrix)
+-And many more
+
+Economies of scale: ability to do things more efficiently or at a lower cost when operating at a larger scale
+Capital expenditure (CapEx): spending money on physical infrastructure up front, then deducting that expense from your tax bill over time. Upfront cost that has a value which reduces over time
+Operational expenditure (OpEx): Spending money on services/products now and being charged now. Deduct from tax bill in the same year. 
+
+CapEx computing costs: servers, storage, network, backup/archive, organization continuity, disaster recovery, technical personnel
+	-Benefits: Fixed costs, so good if the demand is known ahead of time or the budget is set
+
+OpEx cloud computing costs: leasing software, scaling charges based on usage, billing at the user/organizational level
+	-Benefits: Variable costs based on demand, great for agile business needs
+
+Cloud deployment models
+
+Public cloud: Most common, everything runs on cloud provider's hardware, agile, pay-as-you-go, not responsible for maintainance, minimal knowledge to use
+
+Private cloud: create cloud environment in your own datacenter and provide self-service access to users. Gives the feel of a public cloud, but the maintainance and purchase of hardware and software falls on you. Can be easier to meet security or compliance guidelines than public cloud. 
+		-Require IT skills, limited agility, have CapEx costs
+		
+Hybrid cloud: combination of public and private clouds
+	-Very flexible in costs and which operations are run privately vs publically
+	-Can be expensive and complicated to setup
+
+Three Categories of Cloud Computing
+
+Infrastructure as a Service (IaaS): most flexible, rent the hardware in a shared responsibility model
+	-Provider ensures cloud infrastructure is functioning properly, customer responsible for configuring their service correctly, having it up to date and available to their customers
+	-Good for migrating workloads, test and development, storage/backup/recovery
+	
+Platform as a Service (PaaS): environment for building, testing, and deploying software apps without managing the infrastructure	
+	-Used as a development framework and analytics or business intelligence
+
+Software as a Service (SaaS): centrally hosted software that is managed for the end customer
+	-Skype and Office 365 are two examples
+
+IaaS requires the most most user management, PaaS a medium amount, and SaaS the least
+	
