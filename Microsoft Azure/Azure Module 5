@@ -1,0 +1,19 @@
+Azure Fundamentals
+
+Core Cloud Services- Manage Services with the Azure Portal
+
+Azure Management Options
+-Azure Portal
+-Azure PowerShell
+-Azure CLI
+-Azure Cloud Shell
+-Azure Mobile App
+-Azure SDKs and REST APIs
+
+-Azure Marketplace is usually where you start creating new resources in Azure
+
+Azure Portal Dashboards
+
+-Able to create dashboards for specific roles in the organization
+-Dashboards are stored as JSON files
+-Basically everything is common sense on the portal

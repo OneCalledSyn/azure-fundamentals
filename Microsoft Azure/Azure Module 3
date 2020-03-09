@@ -1,0 +1,62 @@
+Azure Fundamentals
+
+Core Cloud Services
+
+How does Azure work? 
+ -Private and public cloud platform
+ -Virtualization: Separate tight coupling between a computer's hardware and OS using an abstraction layer called a 'hypervisor'
+ -Hypervisor emulates all the functions of a physical computer in a VM, each hypervisor can run multiple VMs
+ -Repeat on a large scale in Microsoft datacenters globally
+ -Each rack has many servers that each have a hypervisor
+ -Network switch provides connectivity to each rack
+ -Each rack has one server which runs a special piece of software called a 'fabric controller'
+ -All of the fabric controllers are connected to another piece of software called the 'orchestrator'
+ -Users make requests through the orchestrator's web API on the UI of the Azure portal, and the orchestrator then handles those requests
+ 
+ Azure services:
+  -Compute services
+  -Cloud storage
+  -Networking
+  -App hosting
+  -Artificial intelligence
+  -Internet of Things (IoT)
+  -Integration
+  -Security
+  
+Compute services:
+ -Azure VMs and Scale Sets
+ -Azure Kubernetes: Management of a cluster of VMs that run containerized services
+ -Azure Service Fabric: distributed systems platform
+ -Azure Batch: Parallel and high-performance computing managed service
+ -Azure Container Instances: containerized apps w/o provisioning servers or VMs
+ -Azure Functions: event-driven, serverless compute function
+
+Networking services:
+ -Virtual Network
+ -Load Balancer:
+ -Application Gateway:
+ -VPN Gateway:
+ -DNS:
+ -Content Delivery Network:
+ -DDoS Protection:
+ -Traffic Manager:
+ -ExpressRoute:
+ -Network Watcher:
+ -Firewall:
+ -Virtual WAN:
+
+Storage:
+ -Blob storage:
+ -File storage:
+ -Queue storage:
+ -Table storage:
+
+All services are durable, secure, scalable, managed, and accessible
+
+Databases:
+ -Cosmos DB:
+ -SQL database:
+ -
+
+Azure App Service: HTTP-based service that enables you to build and host many types of web-based solutions without managing infrastructure. For example, you can host web apps, mobile back ends, and RESTful APIs in several supported programming languages. Applications developed in .NET, .NET Core, Java, Ruby, Node.js, PHP, or Python can run in and scale with ease on both Windows and Linux-based environments. 
+

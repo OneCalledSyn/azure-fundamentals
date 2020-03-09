@@ -1,0 +1,38 @@
+Azure Fundamentals
+
+Core Cloud Services - Azure architecture and service guarantees
+
+Usually deploying a resource in Azure will necessitate selecting a region
+Some services and VMs are only available in certain regions, and some need no region selection
+Provides global reach with local presence
+
+Azure Geographies
+-Azure divides the world into geographies that are defined by geopolitical boundaries or country borders
+-An Azure geography is a discrete market typically containing two or more regions that preserve data residency and compliance boundaries
+-Allow customers with specific data residency and compliance needs to keep their data and applications close
+-Ensure that data residency, sovereignty, compliance, and resiliency requirements are honored within geographical boundaries
+-Fault-tolerant to withstand complete region failure through their connection to dedicated high-capacity networking infrastructure
+
+Availability Zones
+-Physicaly separate datacenters within an Azure region
+-Each zone is made up of datacenters with independent power, cooling, and networking so if one goes down the rest still work
+-Primarily used for VMs, managed disks, load balancer, and SQL databases
+-Zonal service: pin the resource to a specific zone
+-Zone redundant services: replicates automatically across zones
+
+Region Pairs
+-Each Azure region is paired with another region within the same geography but at least 300 miles away
+-Replication of resources that are unlikely to be simultaneously affected by outages
+
+Service Level Agreements
+-Formals documents that define the standards Azure must meet for its customers
+-Main components: Performance targets, uptime and connectivity guarantees, and service credits
+-Composite SLA for different services combined together
+ -Combined probability of failure higher than each individual SLA level
+ 
+Improving App Reliability
+-Provision resources according to workload requirements
+-Resiliency: ability of a system to recover from failures and continue to function
+ -High availability and disaster recovery are two main components of resiliency
+-When defining the architecture, perform Failure Mode Analysis (FMA) to identify possible points of failure and how each one will be responded to
+ 

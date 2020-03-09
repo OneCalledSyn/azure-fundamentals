@@ -1,0 +1,18 @@
+Azure Fundamentals
+
+Azure Billing: An Azure subscription is a logical container used to provision resources in Azure
+	-Holds the details of all your resources like virtual machines (VMs), databases, and more
+	-When you create an Azure resource like a VM, you identify the subscription it belongs to
+	-As you use the VM, the usage of the VM is aggregated and billed monthly
+
+	-Creating additional subscriptions can be useful for resource management
+		-Separate environments, organize structure, billing, subscription limits, etc.
+		-Subscriptions can be partitioned into invoice sections
+
+Support resources:
+ -Azure Quickstart Center, Azure Service Health, Azure Advisor
+Support plans:
+ -Developer, standard, professional direct
+Community support:
+ -Azure Knowledge Center, Microsoft Tech Community, Stack Overflow, Server Fault, Azure Forums, Twitter
+ 

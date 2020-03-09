@@ -1,0 +1,42 @@
+Azure Fundamentals
+
+Azure Compute Options
+-Most common choices: VMs, containers, Azure App Service, serverless computing
+-VM: software emulations of physical computers. They include a virtual processor, memory, storage, and networking resources. They host an operating system (OS), and you're able to install and run software just like a physical computer
+-Container: bundle the libraries and components needed to run the application and use the existing host OS running the container
+-Platform-as-a-service (PaaS) offering in Azure that is designed to host enterprise-grade web-oriented applications
+-Serverless computing: cloud-hosted execution environment that runs your code but completely abstracts the underlying hosting environment
+
+Virtual Machines
+-Ideal choice when you need:
+ -Total control over the operating system (OS)
+ -The ability to run custom software, or
+ -To use custom hosting configurations
+ -Still need to maintain the VM: configure, update, and maintain the software that runs on the VM
+-Availability set is a logical grouping of two or more VMs that help keep your application available during planned or unplanned maintenance 
+-Azure Virtual Machine Scale Sets let you create and manage a group of identical, load balanced VMs
+-Azure Batch enables large-scale job scheduling and compute management with the ability to scale to tens, hundreds, or thousands of VMs
+
+Containers
+-A container doesn't use virtualization, so it doesn't waste resources simulating virtual hardware with a redundant OS
+-Typically makes containers more lightweight than VMs
+-This design allows you to respond quickly to changes in demand or failure
+-Can run multiple isolated applications on a single container host so you don't need separate servers for each app
+-Manage with two main ways:
+ -Azure Container Instances (ACI) offers the fastest and simplest way to run a container in Azure. You don't have to manage any virtual machines or configure any additional services. It is a PaaS offering that allows you to upload your containers and execute them directly with automatic elastic scale
+ -The task of automating, managing, and interacting with a large number of containers is known as orchestration. Azure Kubernetes Service (AKS) is a complete orchestration service for containers with distributed architectures with multiple containers
+-Often used to create solutions using 'microservice architecture'
+
+Azure App Service
+
+-Web apps, API apps, webjobs, mobile app backends
+
+Serverless computing
+
+-Abstraction of servers, OSs, and infrastructure
+-Event driven scale and microbilling
+-Two implementations: 
+ -Azure Functions: execute code in almost any modern language
+  -Azure Functions can be either stateless (the default) where they behave as if they're restarted every time they respond to an event), or stateful (called "Durable Functions") where a context is passed through the function to track prior activity
+ -Azure Logic Apps: execute logic triggered by Azure services without writing any code
+ 
