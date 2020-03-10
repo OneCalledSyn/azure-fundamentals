@@ -1,0 +1,34 @@
+Azure Fundamentals
+
+Data Storage Options
+
+Benefits:
+-Automated backup and recovery
+-Replication across the globe
+-Support for data analytics
+-Encryption capabilities
+-Multiple data types
+-Storage in virtual disks
+-Storage tiers
+
+Types of Data
+-Structured data: Adheres to a schema, all data has same fields or properties
+ -Uses keys to relate tables
+-Semi structured: Uses tags or keys to provide data hierarchy, doesnt fit into table and rows neatly
+-Unstrcutured: No designated structure
+
+Options in Azure
+
+-Azure SQL Database: relational database as a service (DaaS) 
+-Azure Cosmos DB: supports schema-less data for highly responsive, Always On applicatoins
+-Azure Blob: unstructured, highly scalable
+-Azure Data Lake: perform analytics on data usage for stored structured and unstructured data
+	-Scalability and cost benefits of object storage + reliability and performance of Big Data file systems
+	-Ingest, Prepare, Store, Analyze workflow
+-Azure Files: fully managed file shares accessible by Server Message Block (SMB) protocol
+-Azure Queue: store large number of messages that can be accessed from anywhere
+-Disk Storage: provides disks for VMs/apps/services to access and use as necessary
+-Storage tiers: Hot, Cool, Archive
+-Encryption: Azure Storage Service Encryption (SSE) and client-side encryption
+
+	
