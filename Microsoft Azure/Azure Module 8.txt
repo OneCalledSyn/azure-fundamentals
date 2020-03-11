@@ -1,0 +1,41 @@
+Azure Fundamentals
+
+Azure Networking Options
+
+Loosely coupled architecture: Components have little to no knowledge about the other components
+-Each component simply needs to send and receive data, but must agree on standard form of communication
+-Able to scale up or out component-wise
+
+N-tier architecture: divides an app into two or more logical tiers
+-Higher tier should be able to access lower tier, but not vice versa
+
+Ecommerce web app 3 tier structure:
+-Web tier: provides web interface to users through browser
+-Application tier: runs the business logic
+-Data tier: includes databases and other storage
+
+Virtual Network: logically isolated network on Azure
+-can be segmented into subnets
+-Web/app/data tier each have a single VM on the same VN but different subnets
+
+Network Security Group (NSG): allows/denies inbound traffic to Azure resources
+-Basically a cloud-level firewall
+-VM in the web tier allows inbound traffic on port 22 (SSH) and port 80 (HTTP)
+ -Port 22 for direct connection to Linux systems over SSH
+
+Load Balancer: distributes traffic evenly among each system in a pool
+-Azure Load Balancer scales up to millions of flows for TCP and UDP applications
+
+Azure Application Gateway
+-Good option if all your traffic is solely HTTP
+-Uses Azure Load Balancer at the transport level and URL-based routing (application layer load balancing)
+-Benefits: Cookie affinity, SSL termination, Web app firewall, URL rule based routes, rewrite HTTP headers
+
+Content Delivery Network: distributed network of servers that can efficiently deliver web content to users 
+
+Domain Name System (DNS): a method to map user-friendly names to IP addresses
+-Phonebook of the internet
+
+Latency: time it takes for data to travel over a network
+
+Traffic Manager: use to route users to closest endpoint when you have scaled out to different regions
