@@ -1,0 +1,131 @@
+Azure Fundamentals
+
+Security, Responsibility, and Trust in Azure
+
+Security is a shared responsibility
+-Infrastructure as a service: Azure handles physical datacenter/network/hosts, rest is on customer
+-Platform as a service: Additionally Azure handles OS and partially network controls, application, and identity & directory infrastructure
+-Software as a service: Azure has additional full responsibility for Network controls and application
+-Regardless of deployment type, customer is always responsible for data, endpoints, accounts, and access management
+ -MFA and RBAC
+-Layers of security so that if one is breached, further exposure can be prevented
+-Defense in depth layers (inner to outer):
+	-Data
+	-Application
+	-Compute
+	-Networking
+	-Perimeter
+	-Identity and access
+	-Physical security
+	
+Azure Security Center: monitoring service that provides threat protection across all Azure services
+-Provide security recommendations
+-Apply required security to new services as they come online
+-Security assessments to identify risks
+-Malware blocking with machine learning
+-Two tiers, free and standard
+-Incident response flow: Detect, Assess, Diagnose, Stabilize, Close
+	-Security Center used for the first three
+
+Identity and Access
+-Authentication: process of establishing the identity of a person or service looking to access a resource
+-Authorization: process of establishing what level of access an authenticated person or service has
+-Both AuthN and AuthZ are managed by Azure Active Directory
+-Azure AD provides:
+	-AuthN
+	-Single Sign On (SSO): one ID and password to access multiple applications
+	-Application management
+	-Business to business identity services (B2B)
+	-Business to customer identity services (B2C)
+	-Device management
+	
+Single Sign On
+-More identities = greater risks
+-One login for everything simplifies security model
+
+Multifactor Authentication
+-Require two or more elements for full authentication:
+		-Something you know, something you possess, something you are
+
+Service principal: an identity that can be used by a service or application
+-Can be assigned roles
+-Managed identity can be immediately created for any supported Azure service
+
+Role Based Access Control: identities are mapped to roles directly or through group membership
+Azure AD Privileged Identity Management (PIM) is an add on to further assist with overseeing role resources
+
+Encryption: process of making data unreadable and unusable to unauthorized viewers
+-Symmetric encryption: same key to encrypt and decrypt the data
+-Asymmetric encryption: uses a public key and a private key
+	-Either key can encrypt, but need the paired key to decrypt
+	-Used for Transport Layer Security (TLS) in HTTPS and data signing
+
+Encryption at rest: 
+-Data at rest has been stored on a physical medium
+
+Encryption in transit:
+-Data actively moving from one location to another
+-Can be done at several different layers
+	-Encrypting at application layer prior to sending over a network
+	-Setup secure channel like a VPN and transmit at the network layer
+	
+Encryption on Azure
+
+Encrypt Raw Storage: Azure Storage Service Encryption for data at rest, auto encrypts before storing
+Azure Disk Encryption: encrypt Windows and Linux virtual machine disks
+Encrypt databases: Transparent Data Encryption (TDE) for Azure SQL Database and Azure Data Warehouse
+	-Default provides a unique encryption key for each instance of SQL Server 
+	-Can also do Bring Your Own Key (BYOK) with keys stored in Azure Key Vault 
+
+Azure Key Vault: protect secrets
+-Secrets management, key management, certificate management, store secrets backed up by hardware security models (HSM)
+Benefits: centralized application secrets, securely stored secrets and keys, monitor access and use, simplified administration of application secrets, integrate with other Azure services
+
+Azure Certificates
+
+-x.509 v3: can be signed by a trusted cert authority or can be self-signed 
+-Should only use self-signed when developing or testing your cloud services
+-Two primary purposes in Azure:
+	-Service certificates are used for cloud services
+		-Automatically deployed to the VM that is running an instance of your role
+		-Upload certs to Azure portal
+		-Associated with a specific cloud service
+	-Management certificates are used for authenticating with the management API
+
+Azure Key Vault: can also store certs
+-Make certifications in the Vault
+-Store and manage certs without interaction with private key material
+-Manage cert lifecycles
+
+Protect Your Network
+
+Internet Protection: identify all resources that are allowing inbound network traffic of any type, and then ensure they are restricted to only the ports and protocols required		
+
+Firewall: a service that grants server access based on the originating IP address of each request
+-For inbound perimeter protection, use Azure Firewall or Azure Application Gateway or Network virtual appliances (NVAs)
+
+Azure DDoS Protection to block denial of service attacks
+
+For communication between VMs, use Network Security Groups to restrict unnecessary communications
+
+Protect Shared Documents
+
+-Microsoft Azure Information Protection: classify and protect documents and emails by applying labels
+
+Azure Advanced Threat Protection: identifies, detects, and investigates threats, compromised identities, and malicious insider actions 
+-Components: Azure ATP portal for overview, ATP sensor for monitoring domain traffic, ATP cloud service
+
+Microsoft Security Development Lifecycle (SDL): introduces security and privacy considerations all throughout the phases of the development process
+-Provide training: Secrity is everbody's job
+-Define security requirements: Legal/industry reqs, internal standards, coding practices, known threats, etc.
+-Define metrics and compliance reporting
+	-Track key performace indicators (KPI)
+-Perform threat modeling
+-Establish design requirements
+-Define and use cryptography standards
+-Manage security risks from third party companies
+-Use approved tools
+-Perform static & dynamic analysis security testing
+-Perform penetration testing
+-Establish a standard incident response process
+	
