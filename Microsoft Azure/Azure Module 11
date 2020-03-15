@@ -1,0 +1,24 @@
+Azure Fundamentals
+
+Control and organize resources with the Azure Resource Manager
+
+Principles of Resource Groups: Logical container for resources deployed on Azure
+
+-All resources must be in exactly one resource group
+-Group by whatever fits business needs, such as logical grouping, life cycle grouping, or authorization grouping
+-Guidelines and best practices:
+ -Consistent naming conventions
+ -Organizing principles
+
+Tags: name-value pairs of text data that can be applied to resources and resource groups
+-use policies to ensure that our resources have the tags that organize our resources
+-mostly common sense stuff
+
+RBAC: role based access control
+ -Allow model: being assigned to a role allows you to perform specific actions
+ -Best practices:
+  -Only allow specific actions at a particular scope
+  -Grant users the lowest level privilege they need to do their work
+  -Use Resource Locks to make sure critical resources arent modified or deleted
+	-Can be set to either 'Delete' or 'Read-only'
+	

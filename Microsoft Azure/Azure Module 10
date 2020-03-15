@@ -1,0 +1,48 @@
+Azure Fundamentals
+
+Apply and monitor infrastructure standards with Azure Policy
+
+Define IT compliance
+-Azure Policy: Azure service that allows creation, management, and assignment of policies
+-A policy definition expresses what to evaluate and what action to take. For example, you could ensure all public websites are secured with HTTPS, prevent a particular storage type from being created, or force a specific version of SQL Server to be used
+-Common policy definitions: allowed storage account SKUs, allowed resource type, allowed locations, allowed VM SKUs, not allowed resource type
+-Policy definition is represented as a JSON file
+-To apply a policy, use Azure Portal or a command line tool by adding the Microsoft.OlicyInsights extension
+-A policy assignment is a policy definition that has been assigned to take place within a specific scope
+-Some policy effects: Deny, Disabled, Append, Audit, DeployIfNotExists
+
+Initiative definition: a set or group of policy definitions to help track your compliance state for a larger goal
+Initiative assignment: an initiative definition assigned to a specific scope
+
+Enterprise Governance Management
+-Access management occurs at the subscription level
+-Azure Management Groups are containers for managing access, policies, and compliance across multiple Azure subscriptions
+
+Defining standard resources with Azure Blueprints
+-Enables cloud architects and central information technology groups to define a repeatable set of Azure resources that implements and adheres to an organization's standards, patterns, and requirements
+-Declarative way to orchestrate the deployment of various resource templates and other artifacts, such as:
+	-Role assignments, policy assignments, Azure Resource Manager templates, resource groups
+-The relationship between the blueprint definition (what should be deployed) and the blueprint assignment (what was deployed) is preserved
+-Backed by globally distributed Azure Cosmos DB
+-A blueprint is a package or container for composing focus-specific sets of standards, patterns, and requirements related to the implementation of Azure cloud services, security, and design that can be reused to maintain consistency and compliance
+
+Microsoft Privacy Statement: Explains what data Microsoft possesses, how it's processed, and for what purpose
+
+Microsoft Trust Center: information and details about how Microsoft implements and supports security, privacy, compliance, and transparency in all Microsoft cloud products and services
+
+Service Trust Portal (STP): hosts Compliance Manager service 
+-Used to publish audit reports and compliance related info relevant to Microsoft cloud services
+
+Compliance Manager: workflow based risk assessment dashboard
+
+Monitor your service health
+
+Azure Monitor: maximizes the availability and performance of your applications by delivering a comprehensive solution for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments
+ -Helps you understand how your applications are performing and proactively identifies issues affecting them and the resources they depend on
+ -Activity Logs record when resources are created or modified and Metrics tell you how the resource is performing and the resources that it's consuming
+ -Application Insights is a service that monitors the availability, performance, and usage of your web applications
+ 
+ Azure Service Health: a suite of experiences that provide personalized guidance and support when issues with Azure services affect you
+  -Azure Status provides a global view of the health state of Azure services
+  -Service Health provides you with a customizable dashboard that tracks the state of your Azure services in the regions where you use them
+  -Resource Health helps you diagnose and obtain support when an Azure service issue affects your resources
