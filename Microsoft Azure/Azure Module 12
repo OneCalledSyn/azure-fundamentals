@@ -1,0 +1,46 @@
+Azure Fundamentals
+
+Predict Costs and Optimize Spending for Azure
+
+Resources are always charged based on usage
+
+De-allocating a VM is similar to turning off a physical computer
+
+Azure usage rates and billing periods can differ between Enterprise, Web Direct, and Cloud Solution Provider (CSP) customers
+	-Some subscription types also include usage allowances, which affect costs
+
+Azure Billing Zones
+	-Most of the time inbound data transfers (data going into Azure datacenters) are free
+	-For outbound data transfers (data going out of Azure datacenters), the data transfer pricing is based on Billing Zones
+	
+Azure Pricing Calculator: allows you to input all the services and costs to get a reasonable estimate of price
+
+Azure Advisor: provides recommendations on high availability, security, performance, and cost
+	-Analyzes your deployed services and looks for ways to improve your environment across those four areas
+	-Reduce costs by eliminating unprovisioned Azure ExpressRoute circuits
+	-Buy reserved instances to save money over pay-as-you-go
+	-Right-size or shutdown underutilized virtual machines
+	
+Azure Cost Management: free, built-in Azure tool that can be used to gain greater insights into where your cloud money is going
+	-See historical breakdowns of what services you are spending your money on and how it is tracking against budgets that you have set
+	-Set budgets, schedule reports, and analyze your cost areas
+
+Total Cost of Ownership (TCO) calculator: useful when beginning to migrate to the cloud
+-Define on-premise infrastructure: servers, databases, storage, and networking
+-Adjust cost assumptions for: Storage, IT labor, hardware, software, electricity, virtualization, datacenter, networking, databases
+
+Azure subscriptions that have associated monthly credits (which includes trial accounts) have a spending limit to ensure you aren't charged once you have used up your credits
+
+If you have VM workloads that are static and predictable, particularly ones that run non-stop all year long, using reserved instances is a fantastic way to potentially save up to 70-80% of the pay-as-you-go cost, depending on the VM size
+
+Should provision connected resources that are bandwidth metered in the same region to reduce egress traffic between them
+
+De-allocate VMs in off hours, especially for testing and development environments
+
+Save on Licensing Costs
+
+-Linux vs Windows: If the application doesnt depend on the underlying OS, consider which is cheaper
+-Azure Hybrid Benefit for Windows Server
+-Azure Hybrid Benefit for SQL Server: vCore
+-BYOL (Bring Your Own License)
+-Use constrained instance sizes for database workloads 
